@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Produits - BioProduits</title>
+<meta name="description" content="BioProduits - Boutique en ligne de produits biologiques naturels et artisanaux. Découvrez nos pains, huiles, thés, miel et bien plus." />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+  body {
+    position: relative;
+    min-height: 100vh;
+    color: #2f5233;
+    display: flex;
+    flex-direction: column;
+    background: url('image/bioproduit.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 0;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(231, 245, 230, 0.8), rgba(205, 232, 197, 0.8));
+    mix-blend-mode: multiply;
+    z-index: -1;
+    pointer-events: none;
+  }
+  .navbar-nav .nav-link {
+    color: #2f5233 !important;
+    font-weight: 500;
+  }
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #1b3e1b !important;
+  }
+  .card {
+    box-shadow: 0 4px 10px rgba(47, 82, 51, 0.15);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(47, 82, 51, 0.3);
+  }
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  footer {
+    background-color: #2f5233;
+    color: #d1e7dd;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: auto;
+  }
+  .btn-success {
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  .btn-success:hover {
+    background-color: #1b3e1b;
+    border-color: #1b3e1b;
+  }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand text-success fw-bold" href="index.html">BioProduits</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link active" href="produits.html" aria-current="page">Produits</a></li>
+        <li class="nav-item"><a class="nav-link" href="panier.html">Panier</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-5">
+  <h2 class="mb-4 text-center">Nos Produits Bio</h2>
+  <div class="row g-4">
+
+    <!-- Produit 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Painbio.jpg" class="card-img-top" alt="Pain bio fait maison, ingrédients naturels" />
+        <div class="card-body">
+          <h5 class="card-title">PAIN Bio</h5>
+          <p class="card-text">Un pain bio fait maison avec des ingrédients naturels, sans additifs, fabriqué localement.</p>
+          <p class="text-success fw-bold">Prix: 30 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+    <!-- Produit 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Huiledolivebio.jpg" class="card-img-top" alt="Huile d'olive bio pressée à froid, sans pesticides" />
+        <div class="card-body">
+          <h5 class="card-title">Huile d'olive Bio</h5>
+          <p class="card-text">Huile d'olive pressée à froid, garantie sans pesticides pour une qualité optimale.</p>
+          <p class="text-success fw-bold">Prix: 150 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Thevertbio.jpg" class="card-img-top" alt="Thé vert bio riche en antioxydants" />
+        <div class="card-body">
+          <h5 class="card-title">Thé Vert Bio</h5>
+          <p class="card-text">Thé vert naturel, riche en antioxydants, idéal pour la santé et la vitalité.</p>
+          <p class="text-success fw-bold">Prix: 100 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 4 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Mielbio.jpg" class="card-img-top" alt="Miel bio naturel récolté localement" />
+        <div class="card-body">
+          <h5 class="card-title">Miel Bio</h5>
+          <p class="card-text">Miel naturel récolté avec soin par nos apiculteurs locaux, sans additifs.</p>
+          <p class="text-success fw-bold">Prix: 120 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 5 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Fromagebio.jpg" class="card-img-top" alt="Fromage artisanal bio fabriqué avec lait frais" />
+        <div class="card-body">
+          <h5 class="card-title">Fromage Bio</h5>
+          <p class="card-text">Fromage artisanal fabriqué avec du lait bio frais, saveur authentique garantie.</p>
+          <p class="text-success fw-bold">Prix: 90 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 6 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Jusbio.jpg" class="card-img-top" alt="Jus de fruits bio pressé à froid sans sucre ajouté" />
+        <div class="card-body">
+          <h5 class="card-title">Jus de Fruits Bio</h5>
+          <p class="card-text">Jus naturel pressé à froid, sans sucre ajouté, rafraîchissant et sain.</p>
+          <p class="text-success fw-bold">Prix: 70 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 7 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Confiturebio.jpg" class="card-img-top" alt="Confiture bio artisanale à base de fruits locaux" />
+        <div class="card-body">
+          <h5 class="card-title">Confiture Bio</h5>
+          <p class="card-text">Confiture artisanale à base de fruits bio récoltés localement, saveur authentique.</p>
+          <p class="text-success fw-bold">Prix: 80 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 8 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Cerisebio.jpg" class="card-img-top" alt="Cerises bio fraîches et sucrées cultivées sans pesticides" />
+        <div class="card-body">
+          <h5 class="card-title">Cerises Bio</h5>
+          <p class="card-text">Cerises fraîches et sucrées cultivées sans pesticides pour une qualité optimale.</p>
+          <p class="text-success fw-bold">Prix: 95 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 9 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Yaourtbio.jpg" class="card-img-top" alt="Yaourt bio naturel fabriqué traditionnellement" />
+        <div class="card-body">
+          <h5 class="card-title">Yaourt Bio</h5>
+          <p class="card-text">Yaourt naturel fabriqué avec du lait bio fermenté traditionnellement pour un goût unique.</p>
+          <p class="text-success fw-bold">Prix: 60 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 10 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Amandesbio.jpg" class="card-img-top" alt="Amandes bio croquantes cultivées sans pesticides" />
+        <div class="card-body">
+          <h5 class="card-title">Amandes Bio</h5>
+          <p class="card-text">Amandes croquantes cultivées sans pesticides ni engrais chimiques, parfaites pour la santé.</p>
+          <p class="text-success fw-bold">Prix: 110 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 11 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Chocolatbio.jpg" class="card-img-top" alt="Chocolat noir bio riche en cacao" />
+        <div class="card-body">
+          <h5 class="card-title">Chocolat Bio</h5>
+          <p class="card-text">Chocolat noir bio, riche en cacao et sans additifs artificiels pour un plaisir sain.</p>
+          <p class="text-success fw-bold">Prix: 130 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produit 12 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/Laitbio.jpg" class="card-img-top" alt="Lait bio entier sans additifs" />
+        <div class="card-body">
+          <h5 class="card-title">Lait Bio</h5>
+          <p class="card-text">Lait entier bio, produit sans additifs ni pesticides, idéal pour toute la famille.</p>
+          <p class="text-success fw-bold">Prix: 50 MAD</p>
+          <button class="btn btn-success w-100 mt-3">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 BioProduits. Tous droits réservés.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    
